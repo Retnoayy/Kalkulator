@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kalkulator Sederhana"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/pink"
+        android:layout_marginTop="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/pink"
+            android:text="Angka Pertama"/>
+
+        <EditText
+            android:id="@+id/angkapertama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/pink"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/pink"
+            android:text="Angka Terakhir"/>
+
+        <EditText
+            android:id="@+id/angkaterakhir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/pink"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/penjumlahan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="@color/pink"
+            android:onClick="hitung"
+            android:textColor="@color/white"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/pengurangan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="@color/pink"
+            android:onClick="hitung"
+            android:textColor="@color/white"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/perkalian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="@color/pink"
+            android:onClick="hitung"
+            android:textColor="@color/white"
+            android:text="x" />
+
+        <Button
+            android:id="@+id/pembagian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pink"
+            android:onClick="hitung"
+            android:textColor="@color/white"
+            android:text="/" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:text="Hasil :"
+        android:textColor="@color/pink" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/pink"
+        android:textSize="20sp"/>
+
+</LinearLayout>
